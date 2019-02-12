@@ -1,0 +1,19 @@
+{
+  "name": "basic-css",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next -p 8000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "iamport": "^0.3.4",
+    "iamporter": "^1.4.2",
+    "net": "^1.0.2",
+    "next": "^8.0.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "tls": "0.0.1"
+  },
+  "license": "ISC"
+}
