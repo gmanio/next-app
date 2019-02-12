@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Iamporter, IamporterError } from 'iamporter';
+import Payment from "../components/payment";
 
 const IMP_UID = 'imp99591491';
 const REST_API = '3769525998731891';
@@ -11,14 +12,7 @@ const iamport = new Iamporter({
 });
 
 export default class Index extends Component {
-
   static async getInitialProps({ req }) {
-    console.log('test');
-    iamport.getToken()
-      .then((res) => {
-        console.log(res);
-      });
-
     const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
     return { userAgent }
   }
@@ -39,6 +33,7 @@ export default class Index extends Component {
         text-rendering: optimizelegibility;
       }`}
         </style>
+        <Payment/>
       </>
     )
   }
