@@ -17,24 +17,10 @@ body {
 `;
 
 export default class Index extends Component {
-  // static async getInitialProps({ ...props }) {
-  //   console.log(props);
-
-  //   // const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
-  //   return props
-  // }
-
   render() {
-    console.log(CounterConsumer);
-
     return (
       <CounterConsumer>
         {({ count }) => (
-          // <div>
-          //   <h1>HOME</h1>
-          //   <p>Counter: {count}</p>
-          //   <button onClick={increase}>Increase</button>
-          //   <button onClick={decrease}>Decrease</button>
           <>
             <p>
               <Link href='/second'>
